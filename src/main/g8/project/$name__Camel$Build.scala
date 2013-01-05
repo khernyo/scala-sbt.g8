@@ -18,7 +18,7 @@ object $name;format="Camel"$Build extends Build {
         scalacOptions ++= Seq("-unchecked", "-deprecation", "-Dscala.timings=true", "-Ywarn-value-discard"),
 
         resolvers ++= Seq(),
-		libraryDependencies ++= Seq()
+        libraryDependencies ++= Seq()
       )
   )
 }
