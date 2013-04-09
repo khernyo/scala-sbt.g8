@@ -15,7 +15,16 @@ object $name;format="Camel"$Build extends Build {
         version := "$version$",
         scalaVersion := "$scala_version$",
 
-        scalacOptions ++= Seq("-unchecked", "-deprecation", "-Dscala.timings=true", "-Ywarn-value-discard"),
+        scalacOptions ++= Seq(
+          "-unchecked",
+          "-deprecation",
+          "-Dscala.timings=true",
+          "-Ywarn-value-discard",
+          "-encoding", "UTF-8",
+          "-target:jvm-1.6",
+          "-feature",
+          "-Ywarn-adapted-args"
+        ),
 
         resolvers ++= Seq(),
         libraryDependencies ++= Seq()
