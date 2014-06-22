@@ -20,10 +20,16 @@ object $name;format="Camel"$Build extends Build {
           "-deprecation",
           "-Dscala.timings=true",
           "-Ywarn-value-discard",
+          "-Ywarn-adapted-args",
+          "-Ywarn-dead-code",
+          "-Ywarn-inaccessible",
+          "-Ywarn-nullary-override",
+          "-Ywarn-nullary-unit",
           "-encoding", "UTF-8",
           "-target:jvm-1.6",
           "-feature",
-          "-Ywarn-adapted-args"
+          "-Ywarn-adapted-args",
+          "-Xlint"
         ),
 
         resolvers ++= Seq(),
