@@ -7,7 +7,7 @@ object $name;format="Camel"$Build extends Build {
   lazy val $name;format="camel"$ = Project(
     id = "$name;format="norm"$",
     base = file("."),
-    settings = Project.defaultSettings ++
+    settings = Defaults.coreDefaultSettings ++
       scalariformSettings ++
       Seq(
         name := "$name$",
